@@ -84,18 +84,23 @@ export default function Hero() {
 </motion.div>
           
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+                  {/* RIGHT IMAGE */}
+        <motion.div
+          initial={{ opacity: 0, x: 30 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8 }}
+          className="flex h-[650px] items-center justify-center rounded-[32px] border border-white/10 bg-zinc-900"
+        >
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-white">
+              OFF SEASON
+            </h2>
 
-          <div className="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/10 bg-black/40 p-5 backdrop-blur-md">
-            <p className="text-xs uppercase tracking-[0.3em] text-zinc-400">
-              Private Coaching
+            <p className="mt-4 text-zinc-400">
+              Premium Fitness Coaching
             </p>
-
-            <h3 className="mt-2 text-xl font-semibold text-white">
-              Built For Discipline, Strength & Longevity
-            </h3>
-          </div>      
-            </motion.div>
+          </div>
+        </motion.div>
 
       </div>
     </section>
