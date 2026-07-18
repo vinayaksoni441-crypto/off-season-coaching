@@ -67,18 +67,22 @@ export default function Hero() {
 
         {/* RIGHT IMAGE */}
         <motion.div
-          initial={{ opacity: 0, x: 30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="relative h-[650px] overflow-hidden rounded-[32px] border border-white/10"
-        >
-          <Image
-            src="/images/hero.png"
-            alt="Hero"
-            fill
-            priority
-            className="object-cover"
-          />
+  initial={{ opacity: 0, x: 30 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8 }}
+  className="flex h-[650px] items-center justify-center rounded-[32px] border border-white/10 bg-zinc-900"
+>
+  <div className="text-center">
+    <h2 className="text-4xl font-bold text-white">
+      OFF SEASON
+    </h2>
+
+    <p className="mt-4 text-zinc-400">
+      Premium Fitness Coaching
+    </p>
+  </div>
+</motion.div>
+          
 
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
 
