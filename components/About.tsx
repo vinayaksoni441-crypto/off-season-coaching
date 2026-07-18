@@ -31,7 +31,7 @@ export default function About() {
             Built for discipline. Designed for longevity.
           </h2>
           <p className="mt-6 text-base leading-8 text-zinc-400 sm:text-lg">
-            I’m Vinayak Soni, an engineering student, powerlifter, and online coach helping ambitious people build strength, confidence, and a lifestyle that lasts beyond the gym.
+            I’m Vinayak Soni, an engineering student, bodybuilder, and online coach helping ambitious people build strength, confidence, and a lifestyle that lasts beyond the gym.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">

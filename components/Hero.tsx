@@ -53,29 +53,30 @@ export default function Hero() {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, x: 24 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-          className="relative flex min-h-[480px] overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-950/70 shadow-[0_40px_120px_rgba(0,0,0,0.45)] sm:min-h-[560px]"
-        >
-          <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-black to-zinc-800" />
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.16),_transparent_38%),radial-gradient(circle_at_bottom_right,_rgba(255,255,255,0.1),_transparent_35%)]" />
-          <motion.div
-            animate={{ y: [0, -8, 0], rotate: [0, -0.5, 0] }}
-            transition={{ duration: 6, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-            className="relative z-10 h-full w-full"
-          >
-            <Image 
-            src="/images/hero.png"
-             alt="Fitness coach posing" fill className="object-cover object-center" priority />
-          </motion.div>
-          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" />
-          <div className="absolute bottom-5 left-5 right-5 z-20 rounded-2xl border border-white/10 bg-black/40 px-4 py-4 backdrop-blur-md">
-            <p className="text-[11px] uppercase tracking-[0.34em] text-zinc-400">Private coaching</p>
-            <p className="mt-2 text-lg font-medium text-white">Built for discipline, strength, and longevity.</p>
-          </div>
-        </motion.div>
-      </div>
-    </section>
-  );
-}
+  initial={{ opacity: 0, x: 24 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+  className="relative flex min-h-[560px] overflow-hidden rounded-[2rem] border border-white/10 bg-zinc-950/70 shadow-[0_40px_120px_rgba(0,0,0,0.45)]"
+>
+  <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-black to-zinc-800" />
+
+  <Image
+    src="/images/hero.png"
+    alt="Hero"
+    fill
+    priority
+    className="object-cover"
+  />
+
+  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
+
+  <div className="absolute bottom-5 left-5 right-5 z-20 rounded-2xl border border-white/10 bg-black/40 p-4 backdrop-blur-md">
+    <p className="text-[11px] uppercase tracking-[0.34em] text-zinc-400">
+      Private Coaching
+    </p>
+
+    <p className="mt-2 text-lg font-medium text-white">
+      Built for discipline, strength, and longevity.
+    </p>
+  </div>
+</motion.div>
