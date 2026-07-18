@@ -1,6 +1,17 @@
 "use client";
 
-import Image from "next/image";
+<Image
+  src="/images/hero.png"
+  alt="Hero"
+  fill
+  priority
+  className="object-cover"
+/>
+<img
+  src="/images/hero.png"
+  alt="Hero"
+  className="absolute inset-0 h-full w-full object-cover"
+/>
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 
@@ -80,3 +91,10 @@ export default function Hero() {
     </p>
   </div>
 </motion.div>
+  </div>
+</motion.div>
+
+      </div>
+    </section>
+  );
+}
