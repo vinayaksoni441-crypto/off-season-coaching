@@ -20,7 +20,7 @@ export default function Navbar() {
       className="sticky top-4 z-50 mx-auto flex w-full max-w-7xl items-center justify-between rounded-full border border-white/10 bg-white/10 px-4 py-3 shadow-[0_20px_70px_rgba(0,0,0,0.35)] backdrop-blur-xl sm:px-6"
     >
       <a href="#top" className="text-sm font-semibold uppercase tracking-[0.35em] text-white">
-        OFF SEASON
+        OFFSEASON
       </a>
 
       <nav className="hidden items-center gap-6 text-sm text-zinc-400 md:flex">
@@ -37,6 +37,12 @@ export default function Navbar() {
       >
         Apply Now
       </a>
+      <a
+  href="#payment"
+  className="text-sm text-zinc-300 hover:text-white transition"
+>
+  Payment
+</a>
     </motion.header>
   );
 }
